@@ -57,7 +57,7 @@ d
 a span {
 	position: absolute;
 	display: block;
-	trasition: .5s ease;
+	transition: .5s ease;
 }
 
 a span:nth-child(1) {
@@ -79,4 +79,35 @@ a span:nth-child(3) {
 	width: 0;
 	height: 1px;
 	background: #fff;
+}
+
+a:hover span:nth-child(3) {
+	width: 100%;
+	transform: translateX(-100%);
+}
+
+a span:nth-child(2) {
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+}
+
+a:hover span:nth-child(2) {
+	height: 100%;
+	transform: translateY(100%);
+}
+
+a span:nth-child(4) {
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+}
+
+a:hover span:nth-child(4) {
+	height: 100%;
+	transform: translateY(-100);
 }
